@@ -2,6 +2,8 @@
 
 Demo: https://vue-ssr-hmr.herokuapp.com/
 
+Article: https://medium.com/js-dojo/how-i-made-it-easy-to-develop-on-vue-js-with-server-side-rendering-fdeebdd7e8d8
+
 I decided develop my new application, using VueJS. 
 I was looking for convenient examples of VueJS, Vuex, which using SSR and hot reloading, 
 but I didn't find them. 
@@ -21,6 +23,8 @@ Routing without full reload pages.
 ### Vuex state management
 
 State management pattern. Represents centralized store for all the components in an application. 
+
+Also, it contains example of fetch data from API and store it to Vuex modules.
 
 More: https://vuex.vuejs.org
 
@@ -85,6 +89,8 @@ Boilerplate has ESLint with Airbnb VueJS config and Prettier for awesome code fo
 To start environment for local development, use:
 ```
 yarn run dev
+# or solution for linux
+sudo yarn run build && yarn run dev
 ```
 **If you run it the first time, you'll get error, that server bundle wasn't found. 
 It's normal. Just re-run this task.**
@@ -96,7 +102,7 @@ yarn run build
 
 To run server side, use:
 ```
-yarn run start-node
+yarn run start
 ```
 (Note, this way isn't for production. 
 Better, you should use process manager, like `PM2`)
